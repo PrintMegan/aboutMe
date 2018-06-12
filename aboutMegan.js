@@ -26,35 +26,35 @@ dogPerson = dogPerson.toLowerCase();
 if (dogPerson === 'yes' || dogPerson === 'y' ){
   alert('I can\'t stand slobbery dogs!' );
 } else if (dogPerson === 'no' || dogPerson === 'n'){
-  alert('You\'re right, cats are where its at!');
+  alert('You\'re right, cats are where it\'s at!');
 } else { 
   alert('Please respond yes or no');
 }
 console.log('Do you think I\'m a dog person' + dogPerson);
 
-//CASTLE
-var castle = prompt('Do you think I live in a castle?');
-castle = castle.toLowerCase();
-if (castle === 'yes' || castle === 'y'){
-  alert('You\'re right! I DO live in a castle!');
-} else if (castle === 'no' || castle === 'n') {
-  alert('Wrong, I DO live in a castle!');
+//Do you think I can hop on one foot while rubbing my belly 
+var hop = prompt('Do you think I can hop on one foot while rubbing my belly?');
+hop = hop.toLowerCase();
+if (hop === 'yes' || hop === 'y'){
+  alert('Heck yes I can!!');
+} else if (hop === 'no' || chop === 'n') {
+  alert('Do you think I\'m uncoordinated?');
 } else {
   alert('Please respond yes or no');
 }
-console.log('Do you think I live in a castle? ' + castle);
+console.log('Do you think I can hop on one foot while rubbing my belly? ' + hop);
 
-//PRINCESS
-var princess = prompt('Do you think i\'m a princess?');
-princess = princess.toLowerCase();
-if(princess === 'yes' || princess === 'y'){
-  alert ('You\'re right! I AM a princess. My name is Cinderella!');
-} else if (princess === 'no' || princess === 'n'){
-  alert('Sorry! I AM a princess! My name is Cinderella');
+//Do you think I'm a bad ass already
+var badass = prompt('Do you think i\'m a badass yet?');
+badass = badass.toLowerCase();
+if(badass === 'yes' || badass === 'y'){
+  alert ('Heck fricking yea I\'m a badass!');
+} else if (badass === 'no' || badass === 'n'){
+  alert('WOW. You underestimate me Sir!' );
 } else {
   alert('Please respond with yes or no');
 }
-console.log('Do you think I am a princess? ' + princess);
+console.log('Do you think I am a badass ' + badass);
 
 
 
