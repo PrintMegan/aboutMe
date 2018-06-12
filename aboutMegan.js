@@ -11,6 +11,7 @@ console.log('What is your name? ' + userName);
 //Do you know me?
 var doYouKnowMe = prompt('Do you know anything about me already?');
 doYouKnowMe = doYouKnowMe.toLowerCase();
+
 if (doYouKnowMe === 'yes' || doYouKnowMe === 'y'){
   alert('So now you\'re a Megan expert?');
 } else if ( doYouKnowMe === 'no' || doYouKnowMe === 'n'){
@@ -23,6 +24,7 @@ console.log(' Do you know about me ' + doYouKnowMe);
 //Am I a dog person?
 var dogPerson = prompt('Do you think I\'m a dog person?');
 dogPerson = dogPerson.toLowerCase();
+
 if (dogPerson === 'yes' || dogPerson === 'y' ){
   alert('I can\'t stand slobbery dogs!' );
 } else if (dogPerson === 'no' || dogPerson === 'n'){
@@ -35,6 +37,7 @@ console.log('Do you think I\'m a dog person' + dogPerson);
 //Do you think I can hop on one foot while rubbing my belly 
 var hop = prompt('Do you think I can hop on one foot while rubbing my belly?');
 hop = hop.toLowerCase();
+
 if (hop === 'yes' || hop === 'y'){
   alert('Heck yes I can!!');
 } else if (hop === 'no' || chop === 'n') {
@@ -47,6 +50,7 @@ console.log('Do you think I can hop on one foot while rubbing my belly? ' + hop)
 //Do you think I'm a bad ass already
 var badass = prompt('Do you think i\'m a badass yet?');
 badass = badass.toLowerCase();
+
 if(badass === 'yes' || badass === 'y'){
   alert ('Heck fricking yea I\'m a badass!');
 } else if (badass === 'no' || badass === 'n'){
