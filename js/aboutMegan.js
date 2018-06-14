@@ -40,28 +40,36 @@ function dog () {
 };
 dog();
   
-// //Do you think I can hop on one foot while rubbing my belly 
-// var hop = prompt('Do you think I can hop on one foot while rubbing my belly?');
-// hop = hop.toLowerCase();
-// if (hop === 'yes' || hop === 'y') {
-//   alert('Heck yes I can!!');
-// } else if (hop === 'no' || hop === 'n') {
-//   alert('Do you think I\'m uncoordinated?');
-// } else {
-//   alert('Please respond yes or no');
-// }
+//Do you think I can hop on one foot while rubbing my belly
+function belly (){
 
-// //Do you think I'm a bad ass already
-// var badass = prompt('Do you think i\'m a badass yet?');
-// badass = badass.toLowerCase();
-// if (badass === 'yes' || badass === 'y') {
-//   alert('Heck fricking yea I\'m a badass!');
-// } else if (badass === 'no' || badass === 'n') {
-//   alert('WOW. You underestimate me Sir!');
-// } else {
-//   alert('Please respond with yes or no');
-// }
-// console.log('Do you think I am a badass ' + badass);
+  var hop = prompt('Do you think I can hop on one foot while rubbing my belly?');
+  hop = hop.toLowerCase();
+  if (hop === 'yes' || hop === 'y') {
+    alert('Heck yes I can!!');
+  } else if (hop === 'no' || hop === 'n') {
+    alert('Do you think I\'m uncoordinated?');
+  } else {
+    alert('Please respond yes or no');
+  }
+};
+belly();
+
+//Do you think I'm a bad ass already
+function superBadass (){
+
+  var badass = prompt('Do you think i\'m a badass yet?');
+  badass = badass.toLowerCase();
+  if (badass === 'yes' || badass === 'y') {
+    alert('Heck fricking yea I\'m a badass!');
+  } else if (badass === 'no' || badass === 'n') {
+    alert('WOW. You underestimate me Sir!');
+  } else {
+    alert('Please respond with yes or no');
+  }
+  console.log('Do you think I am a badass ' + badass);
+};
+superBadass();
 
 // //extra 2 questions
 
