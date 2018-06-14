@@ -12,13 +12,13 @@
 
 // var WereYouBorn = prompt('was I born?').toLowerCase();
 
-// if(wereYouBorn === 'y' || wereYouBorn === 'yes'){
-//   alert('of course I was');
-// } else if(wereYouborn === 'n' || wereYouBorn === 'no' ){
-//   alert('how did you find out my secret? ');
-// } else {
-//   alert('please answer yes or no');
-//  }
+if(wereYouBorn === 'y' || wereYouBorn === 'yes'){
+  alert('of course I was');
+} else if(wereYouborn === 'n' || wereYouBorn === 'no' ){
+  alert('how did you find out my secret? ');
+} else {
+  alert('please answer yes or no');
+ }
 
 //  var favoriteFoods = ['yogurt', 'bananas'];
 //  for(var incrementor = 0; incrementor < favoriteFoods.length; incrementor++){
@@ -26,14 +26,16 @@
 //  }
 
 //counter
-var counterForFoods = 0;
+// var counterForFoods = 0;
 
-while(counterForFoods < 3){
-  var foodGuess = prompt('what is one of my favorite foods? ');
+// while(counterForFoods < 3){
+//   var foodGuess = prompt('what is one of my favorite foods? ');
 
-  if(foodGuess === 'pizza'){
-    alert('nice job');
-    break;
-    counterForFoods++;
-  }
-}
+//   if(foodGuess === 'pizza'){
+//     alert('nice job');
+//     break;
+//     counterForFoods++;
+//   }
+//   }
+
+//guessing game

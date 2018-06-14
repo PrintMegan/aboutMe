@@ -119,6 +119,9 @@ for (numOfGuesses = 0; numOfGuesses < 6; numOfGuesses++) {
     alert('sorry your are all out of guesses');
 
   }
+  if (correctAnswer = true) {
+    break;
+  }
 
 }
 
