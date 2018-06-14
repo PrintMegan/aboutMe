@@ -1,75 +1,104 @@
 'use strict';
 
+var correctCounter = 0;
 //as a developer, I want to ask interactive questions, so that the program is personalized
 
+function welcome() {
 
-var userName = prompt('What is your name?');
-alert('Hi ' + userName);
+  var userName = prompt('What is your name?');
+  alert('Hi ' + userName);
 
-alert('Welcome to my site, let\'s play a game');
+  alert('Welcome to my site, let\'s play a game');
 
-alert('these are yes and no questions,you must answer with either (Y) or (N)');
+  alert('these are yes and no questions,you must answer with either (Y) or (N)');
+};
+welcome();
 
-// //Do you know me?
-// function knowMe (){
-//   var doYouKnowMe = prompt('Do you know anything about me already?');
-//   doYouKnowMe = doYouKnowMe.toLowerCase();
-//   if (doYouKnowMe === 'yes' || doYouKnowMe === 'y') {
-//     alert('So now you\'re a Megan expert?');
-//   } else if (doYouKnowMe === 'no' || doYouKnowMe === 'n') {
-//     alert('How have you not already heard about me? ');
-//   } else {
-//     alert('Please respond yes or no');
-//   }
-// };
+//Do you know me?
+function knowMe() {
+  var doYouKnowMe = prompt('Do you know anything about me already?');
+  doYouKnowMe = doYouKnowMe.toLowerCase();
+  if (doYouKnowMe === 'yes' || doYouKnowMe === 'y') {
+    alert('So now you\'re a Megan expert?');
+    correctCounter += 1;
+  } else if (doYouKnowMe === 'no' || doYouKnowMe === 'n') {
+    alert('How have you not already heard about me? ');
+  } else {
+    alert('Please respond yes or no');
+  }
+};
 
-// knowMe();
+knowMe();
 
-// //Am I a dog person?
-// function dog () {
+//Am I a dog person?
+function dog() {
 
-//   var dogPerson = prompt('Do you think I\'m a dog person?');
-//   dogPerson = dogPerson.toLowerCase();
-//   if (dogPerson === 'yes' || dogPerson === 'y') {
-//     alert('I can\'t stand slobbery dogs!');
-//   } else if (dogPerson === 'no' || dogPerson === 'n') {
-//     alert('You\'re right, cats are where it\'s at!');
-//   } else {
-//     alert('Please respond yes or no');
-//   }
-// };
-// dog();
+  var dogPerson = prompt('Do you think I\'m a dog person?');
+  dogPerson = dogPerson.toLowerCase();
+  if (dogPerson === 'yes' || dogPerson === 'y') {
+    alert('I can\'t stand slobbery dogs!');
+  } else if (dogPerson === 'no' || dogPerson === 'n') {
+    alert('You\'re right, cats are where it\'s at!');
+    correctCounter += 1;
+  } else {
+    alert('Please respond yes or no');
+  }
+};
+dog();
 
-// //Do you think I can hop on one foot while rubbing my belly
-// function belly (){
+//Do you think I can hop on one foot while rubbing my belly
+function belly() {
 
-//   var hop = prompt('Do you think I can hop on one foot while rubbing my belly?');
-//   hop = hop.toLowerCase();
-//   if (hop === 'yes' || hop === 'y') {
-//     alert('Heck yes I can!!');
-//   } else if (hop === 'no' || hop === 'n') {
-//     alert('Do you think I\'m uncoordinated?');
-//   } else {
-//     alert('Please respond yes or no');
-//   }
-// };
-// belly();
+  var hop = prompt('Do you think I can hop on one foot while rubbing my belly?');
+  hop = hop.toLowerCase();
+  if (hop === 'yes' || hop === 'y') {
+    alert('Heck yes I can!!');
+    correctCounter += 1;
+  } else if (hop === 'no' || hop === 'n') {
+    alert('Do you think I\'m uncoordinated?');
+  } else {
+    alert('Please respond yes or no');
+  }
+};
+belly();
 
-// //Do you think I'm a bad ass already
-// function superBadass (){
+//Do you think I'm a bad ass already
+function superBadass() {
 
-//   var badass = prompt('Do you think i\'m a badass yet?');
-//   badass = badass.toLowerCase();
-//   if (badass === 'yes' || badass === 'y') {
-//     alert('Heck fricking yea I\'m a badass!');
-//   } else if (badass === 'no' || badass === 'n') {
-//     alert('WOW. You underestimate me Sir!');
-//   } else {
-//     alert('Please respond with yes or no');
-//   }
-//   console.log('Do you think I am a badass ' + badass);
-// };
-// superBadass();
+  var badass = prompt('Do you think i\'m a badass yet?');
+  badass = badass.toLowerCase();
+  if (badass === 'yes' || badass === 'y') {
+    alert('Heck fricking yea I\'m a badass!');
+    correctCounter += 1;
+  } else if (badass === 'no' || badass === 'n') {
+    alert('WOW. You underestimate me Sir!');
+  } else {
+    alert('Please respond with yes or no');
+  }
+};
+superBadass();
+
+function sweets() {
+
+  var cake;
+  var cakeBool = true;
+
+  do {
+    cake = prompt('Do I looooooove cake');
+    cake = cake.toLowerCase();
+
+    if (cake === 'yes' || cake === 'y') {
+      alert('Heck fricking yea I love cake');
+      correctCounter += 1;
+      cakeBool = false;
+    } else if (cake === 'no' || cake === 'n') {
+      alert('WOW. You uncultured swine!');
+    } else {
+      alert('Please respond with yes or no');
+    }
+  } while (cakeBool);
+};
+sweets();
 
 //extra 2 questions
 
@@ -93,7 +122,7 @@ function kids() {
     } else if (howManyKids == 2) {
       //RIGHT GUESS
       alert('You\'re right!!');
-      console.log('in else if on line 95');
+      correctCounter += 1;
       rightAnswer = true;
       // break;
     }
@@ -105,11 +134,10 @@ function kids() {
       alert('You\'re all out of tries');
     }
 
-    console.log(rightAnswer);
-    console.log(kidsCounter);
   }
 };
 kids();
+
 
 //states I lived in.
 alert('Can you guess a state I\'ve lived in? You\'ll have 6 tries ');
@@ -126,9 +154,9 @@ function stateGuess() {
     state = prompt();
 
     for (var i = 0; i < statesLivedIn.length; i++) {
-      console.log(state, statesLivedIn[i], i);
       if (state === statesLivedIn[i]) {
         alert('success!');
+        correctCounter += 1;
         correctAnswer = true;
         break;
       }
@@ -139,7 +167,6 @@ function stateGuess() {
 
     }
     if (correctAnswer === true) {
-      console.log('correct answer' + correctAnswer);
       break;
     }
 
@@ -152,7 +179,7 @@ function stateGuess() {
 stateGuess();
 
 
-
+alert('You got ' + correctCounter + ' out of 7 right');
 alert('The states are ' + statesLivedIn);
 
 
