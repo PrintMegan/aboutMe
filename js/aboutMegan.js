@@ -56,31 +56,31 @@
 
 // //extra 2 questions
 
-// alert('let\'s play a guessing game. You\'ll have 4 tries');
+alert('let\'s play a guessing game. You\'ll have 4 tries');
 
-// //How many
-// var howManyKids = prompt('How many kids do I have? ');
-// var kidsCounter;
+//How many
+var howManyKids = prompt('How many kids do I have? ');
+var kidsCounter;
 
-// for (kidsCounter = 0; kidsCounter < 3; kidsCounter++) {
-//   if (howManyKids > 2) {
-//     //TOO HIGH GUESS
-//     howManyKids = prompt('Sorry, too high. Try again');
-//   }
-//   else if (howManyKids < 2) {
-//     //TOO LOW GUESS
-//     howManyKids = prompt('Sorry, too low. Try again');
-//   }
-//   //RIGHT GUESS
-//   else if (howManyKids == 2) {
-//     alert('You\'re right!!');
-//     break;
-//   }
-//   if (kidsCounter === 2) {
-//     //RAN OUT OF GUESSES
-//     alert('You\'re all out of tries');
-//   }
-// }
+for (kidsCounter = 0; kidsCounter < 3; kidsCounter++) {
+  if (howManyKids > 2) {
+    //TOO HIGH GUESS
+    howManyKids = prompt('Sorry, too high. Try again');
+  }
+  else if (howManyKids < 2) {
+    //TOO LOW GUESS
+    howManyKids = prompt('Sorry, too low. Try again');
+  }
+  //RIGHT GUESS
+  else if (howManyKids == 2) {
+    alert('You\'re right!!');
+    break;
+  }
+  if (kidsCounter === 2) {
+    //RAN OUT OF GUESSES
+    alert('You\'re all out of tries');
+  }
+}
 //states I lived in.
 alert('Can you guess a state I\'ve lived in? You\'ll have 6 tries ');
 
