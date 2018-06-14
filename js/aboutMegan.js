@@ -91,14 +91,8 @@ var correctAnswer = false;
 
 
 
-
-
-
-
 for (numOfGuesses = 0; numOfGuesses < 6; numOfGuesses++) {
   state = prompt();
-
-
 
   for (var i = 0; i < statesLivedIn.length; i++) {
     console.log(state, statesLivedIn[i], i);
@@ -114,12 +108,13 @@ for (numOfGuesses = 0; numOfGuesses < 6; numOfGuesses++) {
 
   }
   if (correctAnswer === true) {
+    console.log('correct answer' + correctAnswer);
     break;
-  } else {
-    alert('sorry your are all out of guesses');
-
   }
 
+}
+if (numOfGuesses === 6 && correctAnswer === false) {
+  alert('sorry your are all out of guesses');
 }
 
 
