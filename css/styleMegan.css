@@ -1,13 +1,14 @@
 body {
   font-family: fantasy; 
-  background-color: white;
+  background-color: #80bd9e;
   text-align: center;
   font-size: 15pt
 }
 
 h1 {
   color: black;
-  text-align: center;
+ background-color:#ff420e
+  
   display:block;
   text-decoration: underline
 }
@@ -19,13 +20,13 @@ ul {
  
 p {
    color:black;
-   text-align: center;
+   
    display:block
 }
 
 h2 {
   color:black;
-  text-align: center;
+  
   text-decoration: underline
 }
 
