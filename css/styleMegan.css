@@ -1,36 +1,61 @@
-body {
-  font-family: fantasy; 
-  background-color: #80bd9e;
+.intro{
   text-align: center;
-  font-size: 15pt
-}
-
-h1 {
-  color: black;
- background-color:#ff420e
+  font-size: 18px, bold;
+  border:dotted;
+  background-color:rgba(169, 169, 169, 0.171);
   
-  display:block;
-  text-decoration: underline
 }
 
-ul {
-  list-style-position: inside;
-  color: black;
-}
- 
-p {
-   color:black;
+.container{
+  text-align:center;
+  font-size: 16px, bold; 
    
-   display:block
 }
 
-h2 {
-  color:black;
+body{
+background-image:url("http://eatatjacknjills.com/wp-content/uploads/2017/09/grey-black-marble-adhesive-film-dc-fix-self-stick-vinyl-white-and-black-marble-phone-case-white-and-black-marble-wallpaper-black-and-white-marble-iphone-background.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+nav.bar{
+display: inline;
+margin-right:0px 10px;
+border: double;
+
+}
+.head{
+  display: inline-block;
+  text-align:left;
+  background-color:rgba(169, 169, 169, 0.171);
+  border: double;
+}
+
+.par1{
+widows: 300px;
+float:left;
+margin:10px;
+border:double;
+background-color:rgba(169, 169, 169, 0.171);
+}
+
+.topten{
+width:300px;
+float:left;
+margin:10px;
+border:double;
+background-color:rgba(169, 169, 169, 0.171);
+}
+ul{
+list-style-type: circle;
+display: inline-block;
+text-align:left;
+background-color:rgba(169, 169, 169, 0.171);
+
+}
+
+ol{
+  list-style-type: upper-roman;
+  background-color:rgba(169, 169, 169, 0.171);
   
-  text-decoration: underline
-}
-
-img {
-  width: 25%;
-  height: auto
 }
